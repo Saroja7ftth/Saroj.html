@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Subisu Area Statistics</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f8;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    th {
+      background-color: #3498db;
+      color: #fff;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    .total {
+      font-weight: bold;
+      background-color: #2ecc71;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Subisu Area-wise Statistics</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Area</th>
+          <th>Complaints</th>
+          <th>Connections</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Balaju</td><td>6</td><td>5</td></tr>
+        <tr><td>Baluwatar</td><td>8</td><td>7</td></tr>
+        <tr><td>Baneshwore</td><td>6</td><td>4</td></tr>
+        <tr><td>Jorpati</td><td>2</td><td>2</td></tr>
+        <tr><td>Bhaktapur</td><td>3</td><td>3</td></tr>
+        <tr><td>Gongabu</td><td>9</td><td>4</td></tr>
+        <tr><td>Dhapasi</td><td>7</td><td>4</td></tr>
+        <tr><td>Kuleshwore</td><td>4</td><td>3</td></tr>
+        <tr><td>Ranibari</td><td>13</td><td>4</td></tr>
+        <tr><td>Narayanthan</td><td>9</td><td>4</td></tr>
+        <tr><td>Satdobato</td><td>5</td><td>5</td></tr>
+        <tr><td>Sanepa</td><td>3</td><td>3</td></tr>
+        <tr><td>Sitapaila</td><td>9</td><td>2</td></tr>
+        <tr><td>Thamel</td><td>3</td><td>1</td></tr>
+        <tr><td>Sukedhara</td><td>3</td><td>4</td></tr>
+        <tr><td>Chapagaun</td><td>10</td><td>2</td></tr>
+        <tr><td>Monitoring</td><td>38</td><td>4</td></tr>
+        <tr><td>Gongabu/Soaltee - L1</td><td>6</td><td>1</td></tr>
+        <tr><td>Baluwatar/Jorpati - L1</td><td>3</td><td>1</td></tr>
+        <tr><td>Suryabinayak/Satdobato - L1</td><td>3</td><td>1</td></tr>
+        <tr class="total"><td>Total</td><td>156</td><td>70</td></tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
