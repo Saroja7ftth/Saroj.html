@@ -1,86 +1,68 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Subisu Area Statistics</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f6f8;
-      padding: 20px;
-    }
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    th, td {
-      padding: 12px 15px;
-      border: 1px solid #ddd;
-      text-align: center;
-    }
-    th {
-      background-color: #3498db;
-      color: #fff;
-    }
-    tr:nth-child(even) {
-      background-color: #f2f2f2;
-    }
-    .total {
-      font-weight: bold;
-      background-color: #2ecc71;
-      color: white;
-    }
-  </style>
+  <title>Saroj Gaming House</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Subisu Area-wise Statistics</h1>
-    <table>
-      <thead>
-        <tr>
-          <th>Area</th>
-          <th>Complaints</th>
-          <th>Connections</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>Balaju</td><td>6</td><td>5</td></tr>
-        <tr><td>Baluwatar</td><td>8</td><td>7</td></tr>
-        <tr><td>Baneshwore</td><td>6</td><td>4</td></tr>
-        <tr><td>Jorpati</td><td>2</td><td>2</td></tr>
-        <tr><td>Bhaktapur</td><td>3</td><td>3</td></tr>
-        <tr><td>Gongabu</td><td>9</td><td>4</td></tr>
-        <tr><td>Dhapasi</td><td>7</td><td>4</td></tr>
-        <tr><td>Kuleshwore</td><td>4</td><td>3</td></tr>
-        <tr><td>Ranibari</td><td>13</td><td>4</td></tr>
-        <tr><td>Narayanthan</td><td>9</td><td>4</td></tr>
-        <tr><td>Satdobato</td><td>5</td><td>5</td></tr>
-        <tr><td>Sanepa</td><td>3</td><td>3</td></tr>
-        <tr><td>Sitapaila</td><td>9</td><td>2</td></tr>
-        <tr><td>Thamel</td><td>3</td><td>1</td></tr>
-        <tr><td>Sukedhara</td><td>3</td><td>4</td></tr>
-        <tr><td>Chapagaun</td><td>10</td><td>2</td></tr>
-        <tr><td>Monitoring</td><td>38</td><td>4</td></tr>
-        <tr><td>Gongabu/Soaltee - L1</td><td>6</td><td>1</td></tr>
-        <tr><td>Baluwatar/Jorpati - L1</td><td>3</td><td>1</td></tr>
-        <tr><td>Suryabinayak/Satdobato - L1</td><td>3</td><td>1</td></tr>
-        <tr class="total"><td>Total</td><td>156</td><td>70</td></tr>
-      </tbody>
-    </table>
-  </div>
+  <header>
+    <img src="logo.png" alt="Saroj Gaming House Logo" class="logo" />
+    <h1>Saroj Gaming House</h1>
+    <p>Level up your playtime 🎮</p>
+  </header>
+
+  <section class="games">
+    <h2>Available Games</h2>
+    <ul>
+      <li>FIFA 23</li>
+      <li>Call of Duty</li>
+      <li>GTA V</li>
+      <li>eFootball</li>
+      <li>Fortnite</li>
+    </ul>
+  </section>
+
+  <section class="pricing">
+    <h2>Pricing</h2>
+    <p>Rs. 100 per hour</p>
+    <p>Rs. 250 for 3 hours</p>
+  </section>
+
+  <section class="booking">
+    <h2>Book Your Slot</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="datetime-local" required />
+      <button type="submit">Book Now</button>
+    </form>
+<form id="bookingForm">
+  <input type="text" id="name" placeholder="Your Name" required />
+  <input type="email" id="email" placeholder="Email" required />
+  <input type="datetime-local" id="datetime" required />
+  <button type="submit">Book Now</button>
+</form>
+
+<div id="confirmationMessage" style="display: none; text-align: center; margin-top: 20px;">
+  <h3>✅ Booking Confirmed!</h3>
+  <p>Thank you, <span id="confirmName"></span>!</p>
+  <p>Your slot is booked for <span id="confirmTime"></span>.</p>
+</div>
+
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>📍 Location: Near XYZ College, Kathmandu</p>
+    <p>📞 Phone: +977-9800000000</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.062779661024!2d85.3240!3d27.7078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb198f4d3d08b3%3A0x5e660db72c02a63!2sXYZ%20College!5e0!3m2!1sen!2snp!4v1612421033943!5m2!1sen!2snp" 
+      width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <footer>
+    <p>© 2025 Saroj Gaming House. All rights reserved.</p>
+  </footer>
 </body>
 </html>
