@@ -1,0 +1,129 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at top, #1a1a1a, #0d0d0d);
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  padding: 50px 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 255, 204, 0.3);
+}
+
+.logo {
+  width: 90px;
+  height: auto;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 0 5px #00ffcc);
+}
+
+header h1 {
+  font-size: 3em;
+  color: #00ffe7;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #00ffcc;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+section {
+  padding: 50px 25px;
+  border-bottom: 1px solid #292929;
+  background-color: rgba(20, 20, 20, 0.8);
+  backdrop-filter: blur(4px);
+}
+
+section h2 {
+  color: #00ffe1;
+  margin-bottom: 20px;
+  border-left: 5px solid #00ffcc;
+  padding-left: 15px;
+  font-size: 1.8em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #1a1a1a;
+  padding: 12px 15px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  border: 1px solid #2a2a2a;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px transparent;
+}
+
+ul li:hover {
+  background: #262626;
+  box-shadow: 0 0 10px #00ffc8;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 450px;
+  margin: auto;
+}
+
+form input,
+form button {
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1em;
+  background-color: #1f1f1f;
+  color: #fff;
+  outline: none;
+}
+
+form input:focus {
+  border: 2px solid #00ffcc;
+  background-color: #2a2a2a;
+}
+
+form button {
+  background-color: #00ffcc;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #00e6b8;
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #101010;
+  text-align: center;
+  padding: 25px;
+  font-size: 0.9em;
+  color: #aaa;
+  border-top: 1px solid #222;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.2em;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+
+  form {
+    width: 100%;
+  }
+}
